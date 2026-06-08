@@ -1,0 +1,12 @@
+{
+  "name": "Agent Policy Layer",
+  "short_name": "APL",
+  "description": "Portable, composable, fail-closed guardrails for AI agents.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07070d",
+  "theme_color": "#08080c",
+  "icons": [
+    { "src": "/_resources/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
