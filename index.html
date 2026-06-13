@@ -73,7 +73,7 @@
           "applicationCategory": "DeveloperApplication",
           "applicationSubCategory": "AI Agent Guardrails",
           "operatingSystem": "Cross-platform (Python 3.10+)",
-          "softwareVersion": "0.4.0",
+          "softwareVersion": "0.5.0",
           "description": "A portable, composable, fail-closed policy layer for AI agents. Runtime-agnostic guardrails with five verdicts — allow, deny, modify, escalate, observe — composed across many policy servers. Like MCP, but for constraints instead of capabilities.",
           "downloadUrl": "https://pypi.org/project/agent-policy-layer/",
           "codeRepository": "https://github.com/nimonkaranurag/agentpolicylayer",
@@ -619,7 +619,7 @@
                 <div class="hero-content">
                     <div class="hero-badge">
                         <span class="dot"></span>
-                        <span class="tag">v0.4.0</span>
+                        <span class="tag">v0.5.0</span>
                         Fail-closed by default
                     </div>
                     <h1>Stop your agents<br><span class="serif ink-grad">before they stop you.</span></h1>
@@ -631,7 +631,7 @@
                     <div class="hero-actions">
                         <button class="install" id="install" aria-label="Copy: pip install agent-policy-layer">
                             <span class="pfx">$</span>
-                            <span class="cmd">pip install <span class="ink-grad">agent-policy-layer</span></span>
+                            <span class="cmd">pip install <span class="ink-grad">agent-policy-layer[all]</span></span>
                             <span class="copy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></span>
                         </button>
                         <a href="https://github.com/nimonkaranurag/agentpolicylayer" target="_blank" rel="noopener" class="btn btn-ghost">
@@ -1010,7 +1010,7 @@ resp = <span class="c-fn">OpenAI</span>().chat.completions.<span class="c-fn">cr
                 <div class="cta reveal">
                     <div class="cta-inner">
                         <h2>Secure your agents.<br><span class="serif ink-grad">Sleep better at night.</span></h2>
-                        <p>Start protecting your AI agents in under two minutes. No Docker, no external services — just <span class="mono-tag" style="font-family:'JetBrains Mono',monospace;color:var(--violet-bright)">pip install</span>.</p>
+                        <p>Start protecting your AI agents in under two minutes. No Docker, no external services — just <span class="mono-tag" style="font-family:'JetBrains Mono',monospace;color:var(--violet-bright)">pip install</span>. Use <span class="mono-tag" style="font-family:'JetBrains Mono',monospace;color:var(--violet-bright)">[all]</span> for every feature, or pick <span class="mono-tag" style="font-family:'JetBrains Mono',monospace;color:var(--violet-bright)">[cli]</span> / <span class="mono-tag" style="font-family:'JetBrains Mono',monospace;color:var(--violet-bright)">[http]</span> à la carte.</p>
                         <div class="cta-actions">
                             <a href="https://pypi.org/project/agent-policy-layer/" target="_blank" rel="noopener" class="btn btn-primary">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
@@ -1109,7 +1109,7 @@ resp = <span class="c-fn">OpenAI</span>().chat.completions.<span class="c-fn">cr
 
         const install = document.getElementById('install');
         install.addEventListener('click', () => {
-            navigator.clipboard?.writeText('pip install agent-policy-layer').then(() => {
+            navigator.clipboard?.writeText("pip install 'agent-policy-layer[all]'").then(() => {
                 install.classList.add('copied');
                 setTimeout(() => install.classList.remove('copied'), 1600);
             }).catch(() => {});
